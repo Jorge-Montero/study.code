@@ -69,7 +69,26 @@
 
                     testEqual(10);
                 </h1>
+            <h3>Comparison with the Strict Equality Opertor </h3>
+            If the values being compared have different types, they are considered unequal, and the strict equality operator will return false.
+
+            Examples
             
+            3 ===  3   // true
+            3 === '3'  // false
       
+            <p>?  strict equality operator in the if statement so the function will return "Equal" when val is strictly equal to 7</p>
+            <ul>answer
+                <li>// Setup
+                    function testStrict(val) {
+                      if (val === 7) { // Change this line
+                        return "Equal";
+                      }
+                      return "Not Equal";
+                    }
+                    
+                    testStrict(10);
+                    </li>
+            </ul>
 </body>
 </html>
