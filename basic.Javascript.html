@@ -140,5 +140,58 @@
                     testNotEqual(10);
                     </li>
             </ul>
+            <h3>Comparison with the Strict Inequality Operator</h3>
+            <p>The strict inequality operator (!==) is the logical opposite of the strict equality operator. It means "Strictly Not Equal" and returns false where strict equality would return true and vice versa.</p>
+            <p>Strict inequality will not convert data types.
+
+                Examples
+                
+                3 !==  3   // false
+                3 !== '3'  // true
+                4 !==  3   // true
+            </p>
+            <ul>
+                <li>Add the strict inequality operator to the if statement so the function will return "Not Equal" when val is not strictly equal to 17
+                </li>
+                <li>answer
+                    // Setup
+                        function testStrictNotEqual(val) {
+                        if (val !== 17) { // Change this line
+                            return "Not Equal";
+                        }
+                        return "Equal";
+                        }
+
+                        testStrictNotEqual(10);
+                </li>
+            </ul>
+            <h3>Comparison with the Greater Than Operator</h3>
+            <p>The greater than operator (>) compares the values of two numbers. If the number to the left is greater than the number to the right, it returns true. Otherwise, it returns false.
+            </p>
+            <p>Examples
+
+                5   >  3   // true
+                7   > '3'  // true
+                2   >  3   // false
+                '1' >  9   // false</p>
+                <ul>
+                    <li>Add the greater than operator to the indicated lines so that the return statements make sense.</li>
+                    <li>Answer:
+                        function testGreaterThan(val) {
+                        if (val > 100) {  // Change this line
+                          return "Over 100";
+                        }
+                      
+                        if (val > 10) {  // Change this line
+                          return "Over 10";
+                        }
+                      
+                        return "10 or Under";
+                      }
+                      
+                      testGreaterThan(10);
+                      </li>
+                </ul>
+                
         </body>
 </html>
